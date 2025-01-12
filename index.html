@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Tâches</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Liste de Tâches</h1>
+        <div class="formulaire">
+            <input type="text" placeholder="Ajouter une nouvelle tâche...">
+            <button onclick="ajouterTache()">Ajouter</button>
+        </div>
+        <div class="filtres">
+            <button onclick="afficherToutes()">Afficher toutes</button>
+            <button onclick="afficherTerminees()">Afficher terminées</button>
+            <button onclick="afficherNonTerminees()">Afficher non terminées</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-numero">Terminée</th>
+                    <th class="col-numero">Numéro</th>
+                    <th class="col-libelle">Libellés</th>
+                    <th class="col-actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
